@@ -5,27 +5,30 @@
 }
 
 .App {
-  background-color: black;
-  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.masonry-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 8vmin 0;
+  border: 1px solid red;
+  gap: 4vmin
 }
 
-#masonry-grid {
+.masonry-grid-row {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 4vmin;
+  gap: 4vmin
   /* transform: translate(0%, -50%); */
 }
 
-#masonry-grid > img {
-  width: 40vmin;
-  /* height: 56vmin; */
-  /* object-fit: cover; */
-  object-position: 20%;
+.image {
+  /* width: 50vmin; */
+  height: 38vh;
+  object-fit: contain;
+  /* object-position: 20%; */
 }
