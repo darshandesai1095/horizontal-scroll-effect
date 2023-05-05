@@ -7,28 +7,37 @@
 .App {
   height: 100vh;
   display: flex;
+  margin-left: 100px;
 }
 
 .masonry-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
+  align-items: flex-start;
   gap: 4vmin
 }
 
 .masonry-grid-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 4vmin
+  gap: 3vmin;
   /* transform: translate(0%, -50%); */
 }
 
 .image {
   /* width: 50vmin; */
-  height: 38vh;
+  height: 37vh;
   object-fit: contain;
   /* object-position: 20%; */
+}
+
+.row-1 {
+
+}
+
+.row-2 {
+  /* transform: translateX(209px); */
 }
