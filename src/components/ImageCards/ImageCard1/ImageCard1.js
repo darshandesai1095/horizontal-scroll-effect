@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import './ImageCard1.css';
 
 function ImageCard1(props) { 
 
 
     // get width of image and set width of p to image width
-    ///////////////////////////////////////////////////////
 
     const image = useRef(null)
     const [imageWidth, setImageWidth] = useState(0)
@@ -16,37 +16,49 @@ function ImageCard1(props) {
         setStyle({
             width: `${imageWidth}px`
         })
-
     }, [imageWidth])
 
     ///////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////
 
+    const [isVisible, setIsVisible] = useState(false)
+    const { ref, inView } = useInView({
+      threshold: 0,
+      triggerOnce: false
+    })
 
-    // create feature to crop text-box manually
-    ///////////////////////////////////////////
+    useEffect(() => {
+        if (inView) {
+          setIsVisible(true)
+        }
 
-    ///////////////////////////////////////////
-    ///////////////////////////////////////////
+        return () => {setIsVisible(false)}
+
+      }, [inView]);
 
 
     return (
-        <div className="ic1" style={style}>
+        <div className="ic1" style={style} ref={ref}>
 
             <img className='ic1__image'
                  ref = {image}
-                 src="https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+                 src={`${props.src}`}
+                 alt="image"
             />
 
-            <div className="ic1__text-bounding" 
-                //  style={{ clipPath: `polygon(0 0, ${50}% 0, ${50}% 100%, 0 100%)` }}
-                 >
-                <p >
-                    Sint ipsum do reprehenderit pariatur fugiat
-                    et tempor voluptate nostrud elit est ex.
-                </p>
-            </div>
+            {
+                props.description ? 
 
+                <div className={`ic1__text-bounding ${isVisible ? 'animate' : ''}`}>
+                    <p>
+                        {props.description}
+                    </p>
+                </div>
+
+            :
+
+                null
+
+            }
 
         </div>
     )
