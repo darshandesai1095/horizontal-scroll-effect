@@ -9,35 +9,3 @@
   display: flex;
   margin-left: 100px;
 }
-
-.masonry-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4vmin
-}
-
-.masonry-grid-row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 3vmin;
-  /* transform: translate(0%, -50%); */
-}
-
-.image {
-  /* width: 50vmin; */
-  height: 37vh;
-  object-fit: contain;
-  /* object-position: 20%; */
-}
-
-.row-1 {
-
-}
-
-.row-2 {
-  /* transform: translateX(209px); */
-}
