@@ -15,14 +15,35 @@
     background-color: #212529;
     top: 0;
     left: 0;
-    padding: 0 15%;
+    padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    animation: clip-path-animation 12s infinite;
 }
+
+.animate {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: clip-path-animation 13.5s infinite;
+}
+
+@keyframes clip-path-animation {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    44% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    53% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    90% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+  }
 
 .ic1__text-bounding > p {
     color: white;
@@ -30,21 +51,3 @@
     font-size: 0.9rem;
     line-height: 2rem;
 }
-
-@keyframes clip-path-animation {
-    0% {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    }
-    35% {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    }
-    50% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    85% {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    100% {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    }
-  }
