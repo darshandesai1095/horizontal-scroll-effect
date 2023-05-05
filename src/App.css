@@ -4,17 +4,27 @@
   padding: 0;
 }
 
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  width:fit-content
+}
+
 .App {
-  height: 100vh;
+  margin-top: 1200px;
+  margin-bottom: 1000px;
+  height: 200vh;
   display: flex;
+  /* border: 5px solid salmon; */
 }
 
 .masonry-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  border: 1px solid red;
-  gap: 4vmin
+  align-items: flex-start;
+  gap: 4vmin;
+  color: white
 }
 
 .masonry-grid-row {
@@ -22,7 +32,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4vmin
   /* transform: translate(0%, -50%); */
 }
 
@@ -32,3 +41,16 @@
   object-fit: contain;
   /* object-position: 20%; */
 }
+
+.red {
+  background-color: red;
+  height: 500px;
+}
+
+.blue {
+  background-color: blue;
+  height: 400px;
+  transform: translateY(0px)
+}
+
+
