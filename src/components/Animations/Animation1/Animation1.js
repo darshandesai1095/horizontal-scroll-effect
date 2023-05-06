@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import UnsplashImages from '../../../TEST/TESTFILE.js';
 import ImageCard1 from '../../ImageCards/ImageCard1/ImageCard1';
 
-function Animation1() {
+function Animation1( { xOffset } ) {
 
     const r1 = useRef(null)
     const r2 = useRef(null)
@@ -13,9 +13,10 @@ function Animation1() {
     const [scrollX, setScrollX] = useState(0)
     const [translateX, setTranslateX] = useState(0)
 
+    console.log( "xOffset: ", xOffset )
+
     useEffect(() => {
 
-        const handleScroll = () => {
         setR1Width(r1.current.offsetWidth)
         setR2Width(r2.current.offsetWidth)
         setScreenWidth(window.innerWidth)
@@ -23,19 +24,12 @@ function Animation1() {
 
         setTranslateX(() => {
             const rowDiff = r1Width - r2Width
-            const translate = (rowDiff*scrollX)/(r1Width-screenWidth)
+            const translate = (rowDiff * xOffset )/(r1Width-screenWidth)
             if (translate < 6) {return 0}
             return translate > rowDiff ? rowDiff : translate
         })
-        }
 
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        };
-
-    }, [r1Width, r2Width, screenWidth, window.pageXOffset])
+    }, [r1Width, r2Width, screenWidth, xOffset])
 
     const imagesRow1 = UnsplashImages.map( (img, i) => {
             return (
