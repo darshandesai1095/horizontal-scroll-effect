@@ -15,14 +15,14 @@
     background-color: #212529;
     top: 0;
     left: 0;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.animate {
+.ic1__animate {
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: clip-path-animation 13.5s infinite;
 }
@@ -41,13 +41,14 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     100% {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     }
   }
 
 .ic1__text-bounding > p {
     color: white;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 2rem;
+    font-weight: 600;
 }
