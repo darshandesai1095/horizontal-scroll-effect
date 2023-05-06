@@ -48,7 +48,7 @@ function ImageCard1(props) {
             {
                 props.description ? 
 
-                <div className={`ic1__text-bounding ${isVisible ? 'animate' : ''}`}>
+                <div className={`ic1__text-bounding ${isVisible ? 'ic1__animate' : ''}`}>
                     <p>
                         {props.description}
                     </p>
