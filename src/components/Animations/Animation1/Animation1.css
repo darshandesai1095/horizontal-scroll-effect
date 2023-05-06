@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 4vmin
+    gap: 4vmin;
+    margin-left: 150px;
   }
   
   .masonry-grid-row {
