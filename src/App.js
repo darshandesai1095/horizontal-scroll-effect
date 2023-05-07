@@ -1,30 +1,35 @@
-import './App.css';
-import { useRef, useState } from 'react';
-import Animation1 from './components/Animations/Animation1/Animation1';
-import NavBar from './components/NavBar/NavBar';
+import { useRef, useState, useEffect } from "react";
+import "./App.css";
 
-function App() {  // refresh screen if resize detected
+const App = () => {
 
   const appRef = useRef(null)
-  const [xOffset, setXoffset] = useState()
+  const [xOffset, setXOffset] = useState(0)
+
   const handleScroll = (event) => {
-    // event.preventDefault()
+    console.log(appRef.current.scrollLeft)
     appRef.current.scrollLeft += event.deltaY
-    setXoffset(appRef.current.scrollLeft)
+    setXOffset(appRef.current.scrollLeft)
   }
 
   return (
-    <div className="App" 
-         ref={appRef}
-         onWheel={handleScroll}
-         style={{ overflowX: "scroll"}}
-    >
-      <NavBar/>
-      <Animation1 xOffset={xOffset || 0}/>
+    <div className="App" ref={appRef} onWheel={handleScroll}
+         style={{ overflowX: "scroll" }}>
+      <div className="content">
+      
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
 
 
