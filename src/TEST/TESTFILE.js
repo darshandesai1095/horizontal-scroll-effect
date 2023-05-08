@@ -1,27 +1,27 @@
 const UnsplashImages = [
     {
         src: "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
-        title: null,
-        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
+        title: "Night Sky",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682687982107-14492010e05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
-        title: null,
-        description: null
+        title: "Underwater",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682880279219-5e1434044a64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60",
-        title: null,
-        description: null
+        title: "Ocean",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682842098670-ace3aa03f719?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
-        title: null,
-        description: null
+        title: "Heading",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682687220208-22d7a2543e88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
-        title: null,
+        title: "Heading",
         description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
@@ -41,8 +41,8 @@ const UnsplashImages = [
     },
     {
         src: "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
-        title: null,
-        description: null
+        title: "Heading",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682687982107-14492010e05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
@@ -61,7 +61,7 @@ const UnsplashImages = [
     },
     {
         src: "https://images.unsplash.com/photo-1682687220208-22d7a2543e88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
-        title: null,
+        title: "Heading",
         description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
@@ -76,12 +76,12 @@ const UnsplashImages = [
     },
     {
         src: "https://images.unsplash.com/photo-1682936496532-00429ddd7b6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
-        title: null,
-        description: null
+        title: "Heading X",
+        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682687982107-14492010e05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
-        title: null,
+        title: "Heading",
         description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
