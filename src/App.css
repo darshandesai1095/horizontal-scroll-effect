@@ -1,11 +1,13 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
 .App {
   height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-content {
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  gap: 50px
 }
