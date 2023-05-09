@@ -1,0 +1,13 @@
+.image-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: -3px;
+    color: white;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+}

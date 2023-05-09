@@ -6,8 +6,8 @@
 }
 
 .main-content {
-  height: 95vh;
   display: flex;
   flex-direction: row;
-  gap: 50px
+  gap: 50px;
 }
+

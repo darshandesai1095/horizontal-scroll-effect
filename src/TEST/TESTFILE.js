@@ -12,7 +12,7 @@ const UnsplashImages = [
     {
         src: "https://images.unsplash.com/photo-1682880279219-5e1434044a64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60",
         title: "Ocean",
-        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
+        description: null
     },
     {
         src: "https://images.unsplash.com/photo-1682842098670-ace3aa03f719?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
@@ -77,7 +77,7 @@ const UnsplashImages = [
     {
         src: "https://images.unsplash.com/photo-1682936496532-00429ddd7b6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
         title: "Heading X",
-        description: "Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
+        description: "Sint ipsum do int ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do rest ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex. Sint ipsum do reprehenderit pariatur fugiat et tempor voluptate nostrud elit est ex."
     },
     {
         src: "https://images.unsplash.com/photo-1682687982107-14492010e05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60",
