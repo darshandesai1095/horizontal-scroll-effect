@@ -2,10 +2,11 @@
     margin-left: 30vw;
     width: 70vw;
     position: fixed;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: white;
     text-align: right;
     overflow-wrap: break-word;
     hyphens: auto;
     mix-blend-mode: exclusion;
+    line-height: 10rem;
 }
