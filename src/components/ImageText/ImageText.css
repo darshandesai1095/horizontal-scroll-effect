@@ -1,13 +1,13 @@
 .image-text {
     color: white;
     width: 25vw;
-    font-size: 1.3rem;
     font-weight: 500;
     vertical-align: top;
     display: flex;
     flex-direction: column;
-    margin-right: 15vw;
-    line-height: 2rem;
+    margin-right: 0vw;
+    line-height: 2.4rem;
+    font-size: 2rem;
 }
 
 .image-text--visible {

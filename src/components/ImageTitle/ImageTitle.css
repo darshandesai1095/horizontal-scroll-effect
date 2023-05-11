@@ -10,4 +10,5 @@
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 2rem;
+    mix-blend-mode: exclusion;
 }

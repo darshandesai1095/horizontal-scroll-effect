@@ -1,6 +1,6 @@
 .heading {
-    margin-left: 30vw;
-    width: 70vw;
+    margin-left: 45vw;
+    width: 55vw;
     position: fixed;
     font-size: 4rem;
     color: white;
@@ -8,5 +8,7 @@
     overflow-wrap: break-word;
     hyphens: auto;
     mix-blend-mode: exclusion;
+    font-weight: 900;
+    font-size: 5rem;
     line-height: 10rem;
 }

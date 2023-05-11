@@ -10,7 +10,9 @@ const Image = (props) => {
     }, [])
 
     const imgStyle = {
-        height: `${height}vh`
+        height: `${height}vh`,
+        border: "3px solid white",
+        borderRadius: "10px"
     }
 
     return (

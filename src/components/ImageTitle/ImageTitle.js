@@ -1,23 +1,18 @@
 import "./ImageTitle.css";
-import AddBoxSharpIcon from '@mui/icons-material/AddBoxSharp';
-import IndeterminateCheckBoxSharpIcon from '@mui/icons-material/IndeterminateCheckBoxSharp';
-
-import ArrowForwardSharpIcon from '@mui/icons-material/ArrowForwardSharp';
-import ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';
 
 const ImageTitle = (props) => {
     const style = {
-        margin: "0px"
+        fontSize: "2.5rem"
     }
 
-    const buttonSymbol =  props.showText ? 
-        <ArrowBackSharpIcon style={style}/>
+    const buttonSymbol = props.showText ? 
+        <p style={style}>&lt;</p>
         :
-        <ArrowForwardSharpIcon style={style}/>
+        <p style={style}>&gt;</p>
 
     return (
         <div className="image-title" onClick={props.toggleShowText}>
-            <p>{props.title}</p>
+            <p style={style}>{props.title}</p>
             { props.description ? buttonSymbol : null }
         </div>
     )

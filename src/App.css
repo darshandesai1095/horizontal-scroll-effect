@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .main-content {

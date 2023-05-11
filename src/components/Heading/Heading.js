@@ -5,7 +5,7 @@ const Heading = () => {
 
     return (
         <div className="heading">
-            <h1>random heading.</h1>
+            <h1>random test heading.</h1>
         </div>
     )
 }
