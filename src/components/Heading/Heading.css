@@ -1,6 +1,7 @@
 .heading {
-    margin-left: 45vw;
-    width: 55vw;
+    margin-left: 20vw;
+    padding: 10px;
+    width: 80vw;
     position: fixed;
     font-size: 4rem;
     color: white;

@@ -3,8 +3,10 @@ import "./Article.css";
 import ImageTitle from "../ImageTitle/ImageTitle.js";
 import Image from "../Image/Image.js";
 import ImageText from "../ImageText/ImageText.js";
+import { motion } from "framer-motion";
 
-const Article = ( { src, title, description } ) => {
+
+const Article = ( { scrollLeft, src, title, description } ) => {
 
   const [showText, setShowText] = useState(false)
   const toggleShowText = () => {
@@ -24,38 +26,42 @@ const Article = ( { src, title, description } ) => {
   }, [])
 
 
+
   return (
     <>
-    {/* <canvas ref={canvasRef} style={{ display: "none" }} /> */}
-    <div className="article" style={{alignSelf: `${articlePosition}`}}>
-      <div 
-        className="article__main" 
-        style={{flexDirection: `${titlePosition === "top" ? "column" : "column-reverse"}`}}>
+      <motion.div
+          transition={{ type: 'spring', duration: 0.8 }}
+      >
+      <div className="article" style={{alignSelf: `${articlePosition}`}}>
+        <div 
+          className="article__main" 
+          style={{flexDirection: `${titlePosition === "top" ? "column" : "column-reverse"}`}}>
+          {
+            title ?
+
+            <ImageTitle
+              title={title}
+              toggleShowText={toggleShowText} 
+              showText={showText}
+              description={description}
+            />
+
+            : null
+          }
+          <Image src={src}/>
+        </div>
+
         {
-          title ?
-
-          <ImageTitle
-            title={title}
-            toggleShowText={toggleShowText} 
-            showText={showText}
-            description={description}
-          />
-
+          description ? 
+          <ImageText 
+          showText={showText}
+          flexPosition={titlePosition}
+          description={description}
+          /> 
           : null
         }
-        <Image src={src}/>
       </div>
-
-      {
-        description ? 
-        <ImageText 
-        showText={showText}
-        flexPosition={titlePosition}
-        description={description}
-        /> 
-        : null
-      }
-    </div>
+      </motion.div>
     </>
   )
 }

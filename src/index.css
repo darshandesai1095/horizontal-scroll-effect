@@ -9,9 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Amatic SC', cursive;
-  background-color: #F6F4F3;
-  background-color: black;
   overflow-y: hidden;
+  background-color: black;
 }
 
 body::-webkit-scrollbar {
