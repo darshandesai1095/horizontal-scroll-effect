@@ -3,10 +3,10 @@ import "./Article.css";
 import ImageTitle from "../ImageTitle/ImageTitle.js";
 import Image from "../Image/Image.js";
 import ImageText from "../ImageText/ImageText.js";
-import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { transform } from "framer-motion";
 
-
-const Article = ( { scrollLeft, src, title, description } ) => {
+const Article = ( { speed, scrollLeft, src, title, description } ) => {
 
   const [showText, setShowText] = useState(false)
   const toggleShowText = () => {
@@ -25,14 +25,32 @@ const Article = ( { scrollLeft, src, title, description } ) => {
     return position[rand]
   }, [])
 
+  const translate = useMemo(() => {
+    if (articlePosition === "center") {
+      const translateY = [-50, -25, 0, 25, 50]
+      return translateY[Math.floor(Math.random() * translateY.length)]
+    } 
+    return 0
+  }, [])
+
+  const { ref, inView } = useInView({
+    threshold: 0.5, // trigger when element is at least 50% visible
+    triggerOnce: true, // only trigger once
+  });
+
+  const parallaxSpeed = useMemo(() => {
+    return inView ? Math.random() * scrollLeft : 0
+  }, [inView])
 
 
   return (
     <>
-      <motion.div
-          transition={{ type: 'spring', duration: 0.8 }}
-      >
-      <div className="article" style={{alignSelf: `${articlePosition}`}}>
+      <div ref={ref} 
+           className="article" 
+           style={{ 
+              alignSelf: `${articlePosition}`, 
+              transform: `translateY(${translate}px)`
+            }}>
         <div 
           className="article__main" 
           style={{flexDirection: `${titlePosition === "top" ? "column" : "column-reverse"}`}}>
@@ -61,7 +79,6 @@ const Article = ( { scrollLeft, src, title, description } ) => {
           : null
         }
       </div>
-      </motion.div>
     </>
   )
 }

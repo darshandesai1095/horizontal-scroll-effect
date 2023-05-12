@@ -16,28 +16,28 @@ const Heading = (props) => {
   };
 
   useEffect(() => {
-    window.addEventListener("wheel", handleScroll);
+    window.addEventListener("wheel", handleScroll)
 
-    return () => window.removeEventListener("wheel", handleScroll);
-  }, [props.scrollLeft]);
+    return () => window.removeEventListener("wheel", handleScroll)
+  }, [props.scrollLeft])
 
   useEffect(() => {
     const animate = () => {
       setTilt((prevTilt) => {
         const diff = tilt - prevTilt;
-        const nextTilt = prevTilt + diff *  0.001;
-        if (Math.abs(nextTilt - tilt) < 100) {
+        const nextTilt = prevTilt + diff * 0.01;
+        if (Math.abs(nextTilt - tilt) < 10) {
           // Stop the animation when the tilt is close enough to the target
-          setAnimationRequestId(null);
+          setAnimationRequestId(null)
           return tilt;
         }
         return nextTilt;
       });
     };
 
-    if (animationRequestId === null && scrollCount % 10 === 0) {
-      // Start the animation loop if it hasn't been started yet and the scrollCount is divisible by 7
-      setAnimationRequestId(requestAnimationFrame(animate));
+    if (animationRequestId === null && scrollCount % 500 === 0) {
+      // Start the animation loop if it hasn't been started yet and the scrollCount is divisible by 10
+      setAnimationRequestId(requestAnimationFrame(animate))
     }
 
     // Cleanup function
@@ -52,8 +52,8 @@ const Heading = (props) => {
   
 
   return (
-    <div className="heading" style={{ transform: `skewX(${tilt/3}deg)`, transformOrigin: "bottom", }}>
-      <h1>random test heading.</h1>
+    <div className="heading" style={{ transform: `skewX(${tilt}deg)`, transformOrigin: "bottom", }}>
+      <h1>random heading<span className="accent">.</span></h1>
     </div>
   );
 };

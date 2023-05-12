@@ -1,6 +1,5 @@
 .heading {
     margin-left: 20vw;
-    padding: 10px;
     width: 80vw;
     position: fixed;
     font-size: 4rem;
@@ -10,6 +9,12 @@
     hyphens: auto;
     mix-blend-mode: exclusion;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 10rem;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.heading .accent {
+    /* color: #6e44ff */
 }

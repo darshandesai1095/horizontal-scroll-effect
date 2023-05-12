@@ -2,7 +2,7 @@ import "./ImageTitle.css";
 
 const ImageTitle = (props) => {
     const style = {
-        fontSize: "2.5rem"
+
     }
 
     const buttonSymbol = props.showText ? 

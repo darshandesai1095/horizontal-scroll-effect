@@ -5,10 +5,15 @@
     align-items: center;
     position: relative;
     right: -3px;
-    color: white;
     gap: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 1.5rem;
     mix-blend-mode: exclusion;
+    color: white;
+    transition: 0.3s
+}
+
+.image-title:hover {
+    cursor: pointer;
 }

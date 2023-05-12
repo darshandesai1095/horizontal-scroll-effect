@@ -1,13 +1,14 @@
 .image-text {
-    color: white;
     width: 25vw;
     font-weight: 500;
     vertical-align: top;
     display: flex;
     flex-direction: column;
     margin-right: 0vw;
-    line-height: 2.4rem;
-    font-size: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    mix-blend-mode: exclusion;
+    color: white
 }
 
 .image-text--visible {
