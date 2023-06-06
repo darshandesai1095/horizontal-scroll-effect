@@ -51,7 +51,7 @@ const Heading = (props) => {
   
 
   return (
-    <div className="heading" style={{ transform: `skewX(${tilt}deg)`, transformOrigin: "bottom", }}>
+    <div className="heading" style={{ transform: `skewX(${tilt}deg)`, transformOrigin: "bottom" }}>
       <h1>Gallery Heading.</h1>
     </div>
   );

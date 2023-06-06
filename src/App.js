@@ -5,8 +5,7 @@ import Article from "./components/Article/Article";
 import Heading from "./components/Heading/Heading";
 
 const App = () => {
-  // inspiration: https://appellemoipapa.fr/
-
+  
   const [scrollLeft, setScrollLeft] = useState(0);
   const handleScroll = (event) => {
     // event.preventDefault()
