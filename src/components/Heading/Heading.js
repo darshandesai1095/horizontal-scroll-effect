@@ -1,19 +1,18 @@
-import { useRef, useState, useEffect } from "react";
-import { ease } from "d3-ease";
+import { useState, useEffect } from "react";
 import "./Heading.css";
 
 const Heading = (props) => {
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const [tilt, setTilt] = useState(0);
-  const [animationRequestId, setAnimationRequestId] = useState(null);
-  const [scrollCount, setScrollCount] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0)
+  const [tilt, setTilt] = useState(0)
+  const [animationRequestId, setAnimationRequestId] = useState(null)
+  const [scrollCount, setScrollCount] = useState(0)
 
   const handleScroll = (event) => {
-    const newScrollLeft = props.scrollLeft;
-    setTilt(-event.deltaY / 10);
-    setScrollLeft(newScrollLeft);
-    setScrollCount((prevCount) => prevCount + 1);
-  };
+    const newScrollLeft = props.scrollLeft
+    setTilt(-event.deltaY / 10)
+    setScrollLeft(newScrollLeft)
+    setScrollCount((prevCount) => prevCount + 1)
+  }
 
   useEffect(() => {
     window.addEventListener("wheel", handleScroll)
@@ -24,7 +23,7 @@ const Heading = (props) => {
   useEffect(() => {
     const animate = () => {
       setTilt((prevTilt) => {
-        const diff = tilt - prevTilt;
+        const diff = tilt - prevTilt
         const nextTilt = prevTilt + diff * 0.01;
         if (Math.abs(nextTilt - tilt) < 10) {
           // Stop the animation when the tilt is close enough to the target
@@ -44,7 +43,7 @@ const Heading = (props) => {
     return () => {
       if (animationRequestId !== null) {
         // Cancel the animation loop if it's still running
-        cancelAnimationFrame(animationRequestId);
+        cancelAnimationFrame(animationRequestId)
         setAnimationRequestId(null);
       }
     };
@@ -53,7 +52,7 @@ const Heading = (props) => {
 
   return (
     <div className="heading" style={{ transform: `skewX(${tilt}deg)`, transformOrigin: "bottom", }}>
-      <h1>random heading<span className="accent">.</span></h1>
+      <h1>Gallery Heading.<span className="accent">.</span></h1>
     </div>
   );
 };

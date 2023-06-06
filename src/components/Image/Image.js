@@ -11,7 +11,6 @@ const Image = (props) => {
 
     const imgStyle = {
         height: `${height}vh`,
-        // border: "3px solid white",
         borderRadius: "0px"
     }
 

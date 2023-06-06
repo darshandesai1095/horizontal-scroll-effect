@@ -1,12 +1,11 @@
-import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo } from "react";
 import "./Article.css";
 import ImageTitle from "../ImageTitle/ImageTitle.js";
 import Image from "../Image/Image.js";
 import ImageText from "../ImageText/ImageText.js";
 import { useInView } from 'react-intersection-observer';
-import { transform } from "framer-motion";
 
-const Article = ( { speed, scrollLeft, src, title, description } ) => {
+const Article = ( { scrollLeft, src, title, description } ) => {
 
   const [showText, setShowText] = useState(false)
   const toggleShowText = () => {
