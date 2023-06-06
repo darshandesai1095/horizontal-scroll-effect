@@ -1,12 +1,11 @@
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
-import UnsplashImages from "./TEST/TESTFILE.js"
+import UnsplashImages from "./ImageData/ImageData.js"
 import Article from "./components/Article/Article";
 import Heading from "./components/Heading/Heading";
-import Navigation from "./components/Navigation/Navigation";
 
 const App = () => {
-
+  // inspiration: https://appellemoipapa.fr/
 
   const [scrollLeft, setScrollLeft] = useState(0);
   const handleScroll = (event) => {
@@ -16,10 +15,7 @@ const App = () => {
     container.scrollLeft -= delta
     setScrollLeft(container.scrollLeft)
   }
-
-  // https://appellemoipapa.fr/
   
-
   const images = UnsplashImages.map((img, i) => {
     return (
       <Article
@@ -34,7 +30,6 @@ const App = () => {
 
   return (
     <div className="App" id="container"  onWheel={handleScroll} >
-      <Navigation/>
       <Heading scrollLeft={scrollLeft}/>
       <div className="main-content">
         {images}

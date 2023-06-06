@@ -30,7 +30,7 @@ const Heading = (props) => {
           setAnimationRequestId(null)
           return tilt;
         }
-        return nextTilt;
+        return nextTilt
       });
     };
 
@@ -47,12 +47,12 @@ const Heading = (props) => {
         setAnimationRequestId(null);
       }
     };
-  }, [tilt, animationRequestId, scrollCount]);
+  }, [tilt, animationRequestId, scrollCount])
   
 
   return (
     <div className="heading" style={{ transform: `skewX(${tilt}deg)`, transformOrigin: "bottom", }}>
-      <h1>Gallery Heading.<span className="accent">.</span></h1>
+      <h1>Gallery Heading.</h1>
     </div>
   );
 };

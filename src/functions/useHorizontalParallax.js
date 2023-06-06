@@ -15,7 +15,7 @@ const useHorizontalParallax = (speed = 1.5) => {
 
   return {
     transform: `translateX(-${scrollX / speed}px)`
-  };
-};
+  }
+}
 
 export default useHorizontalParallax
